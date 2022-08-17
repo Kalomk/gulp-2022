@@ -1,0 +1,20 @@
+@use "sass:math";
+
+$main_cont: 1280;
+$containerWidth: 1200px;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakPoint1200: 1199.98 + px;
+$breakPoint992: 991.98 + px;
+$breakPoint768: 767.98 + px;
+$breakPoint480: 479.98 + px;
+//Burger Menu
+$burgerBreakPoint: $breakPoint992;
+$burgerColor: black;
+$burgerActiveColor: white;
+// fonst
+$fontMain: "Gilroy", sans-serif;
+$fontSecondary: "";
+//colors
+$colorPrimary: #001731;
+$colorSecondary: #398bff;

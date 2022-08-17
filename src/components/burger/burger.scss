@@ -1,0 +1,90 @@
+.menu {
+  display: flex;
+  font-size: 18px;
+  position: relative;
+  z-index: 3;
+}
+.navbar__link {
+  color: aliceblue;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  body {
+    height: 50px;
+    &.lock {
+      overflow: hidden;
+    }
+  }
+  .navbar__link {
+    font-size: 24px;
+  }
+  .navbar__list {
+    display: block;
+  }
+  .navbar__list li {
+    margin-bottom: 20px;
+  }
+  .burger {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 30px;
+    z-index: 3;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      left: 0;
+      transition: 0.3s;
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    & span {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      left: 0px;
+      top: 9px;
+      transition: 0.3s;
+    }
+
+    &.active::before {
+      transform: rotate(45deg);
+      top: 9px;
+      transition: 0.3s;
+    }
+    &.active::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+      transition: 0.3s;
+    }
+    &.active span {
+      transform: scale(0);
+      transition: 0.3s;
+    }
+  }
+  .menu {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    padding: 70px 0 20px 0;
+    overflow: auto;
+    .menu.active {
+      top: 0;
+      transition: 0.3s;
+    }
+  }
+}

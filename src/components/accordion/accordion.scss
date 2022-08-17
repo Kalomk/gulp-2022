@@ -1,0 +1,36 @@
+.accordion {
+  .accordion__item {
+    border-bottom: 1px solid black;
+    &.accordion__item-active {
+      .accordion__item-content {
+        display: block;
+      }
+    }
+    .accordion__item-trigger {
+    }
+    .trigger__num {
+    }
+    .accordion__text {
+    }
+    .accordion__img {
+    }
+    .line1 {
+      opacity: 0;
+      transition: 0.1s all ease;
+    }
+    .line2 {
+      transform: translate(0) !important;
+      transition: 0.1s all ease;
+    }
+    .accordion_item-content {
+      display: block;
+      .content__text {
+        margin-top: 25px;
+        padding-left: 35px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

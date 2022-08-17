@@ -1,0 +1,33 @@
+nav {
+  color: white;
+  overflow: hidden;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 100%;
+}
+.logo {
+  a {
+    color: white;
+  }
+}
+.nav__links {
+  color: white;
+}
+.nav__items {
+  margin-top: 15px;
+}
+.menu{
+}
+span {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 2px;
+  transform: scale(1);
+  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+}
